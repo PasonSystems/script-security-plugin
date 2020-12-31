@@ -8,13 +8,13 @@
   </parent>
 
   <artifactId>script-security</artifactId>
-  <version>1.75</version>
+  <version>99.1.75</version>
   <packaging>hpi</packaging>
   <name>Script Security Plugin</name>
   <description>Allows Jenkins administrators to control what in-process scripts can be run by less-privileged users.</description>
   <url>https://github.com/jenkinsci/script-security-plugin</url>
   <properties>
-    <revision>1.75</revision>
+    <revision>99.1.75</revision>
     <changelist>-SNAPSHOT</changelist>
     <jenkins.version>2.176.4</jenkins.version>
     <java.level>8</java.level>
@@ -63,7 +63,9 @@
     <dependency>
       <groupId>org.kohsuke</groupId>
       <artifactId>groovy-sandbox</artifactId>
-      <version>1.27</version>
+      <version>1.27.1</version>
+      <scope>system</scope>
+      <systemPath>/var/jenkins_home/plugins/script-security/WEB-INF/lib/groovy-sandbox-1.27.1.jar</systemPath>
       <exclusions>
         <exclusion>
           <groupId>org.codehaus.groovy</groupId>
